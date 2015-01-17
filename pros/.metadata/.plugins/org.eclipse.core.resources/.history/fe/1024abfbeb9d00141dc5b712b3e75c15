@@ -51,10 +51,7 @@
  *
  * This task should never exit; it should end with some kind of infinite loop, even if empty.
  */
-
-//[Author aHammershapedfish]
-
-//Define the Joystick Buttons
+					//Define the Joystick Buttons
        //[Button]	[Char#]
 #define Joy_Down	1
 #define Joy_Up		2
@@ -63,8 +60,8 @@
 void operatorControl() {
 
 	while (1) {
-				/*[Beowulf-TankDrive System]
-				Read joystick values*/
+				//[Beowulf-TankDrive System]\\
+		        // Read joystick values
 		        int TentacleL = joystickGetAnalog(1, 3);
 		        int TentacleR = joystickGetAnalog(1, 2);
 		        // Send joystick outputs to motors
@@ -85,16 +82,6 @@ void operatorControl() {
 				motorSet(8, 0);
 
 				delay(20);
-			int Turin = analogRead(1);
-			int Hurin = analogRead(2);
-
-			if (Turin >= 1){
-				//what to do if front bumper is hit
-			}
-			if (Hurin >= 1){
-				//What back bumper
-			}
-
 			}
 	}
 }
