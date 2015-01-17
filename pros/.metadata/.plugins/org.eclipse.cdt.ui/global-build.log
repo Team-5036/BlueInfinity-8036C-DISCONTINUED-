@@ -38,3 +38,29 @@ LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to
    text	   data	    bss	    dec	    hex	filename
   12100	      0	   3840	  15940	   3e44	./bin/output.elf
 arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+19:58:42 **** Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:57:5: warning: multi-line comment [-Wcomment]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12280	      0	   3840	  16120	   3ef8	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+20:49:03 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c:55:3: error: expected identifier or '(' before '[' token
+opcontrol.c:55:3: error: stray '#' in program
+opcontrol.c:63:5: warning: multi-line comment [-Wcomment]
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+20:49:17 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:63:5: warning: multi-line comment [-Wcomment]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12280	      0	   3840	  16120	   3ef8	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin

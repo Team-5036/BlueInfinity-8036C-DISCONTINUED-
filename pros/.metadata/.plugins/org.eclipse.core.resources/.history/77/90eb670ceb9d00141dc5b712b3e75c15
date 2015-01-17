@@ -52,7 +52,7 @@
  * This task should never exit; it should end with some kind of infinite loop, even if empty.
  */
 					//Define the Joystick Buttons
-       //[Button]	[Char#]
+		[Button]	[Char#]
 #define Joy_Down	1
 #define Joy_Up		2
 #define Joy_Left	3//Not Possible for use on Groups 5 or 6
