@@ -54,6 +54,7 @@
 void operatorControl() {
 
 	while (1) {
+				//[Beowulf-TankDrive System]\\
 		        // Read joystick values
 		        int TentacleL = joystickGetAnalog(1, 3);
 		        int TentacleR = joystickGetAnalog(1, 2);
@@ -68,12 +69,12 @@ void operatorControl() {
 		        //Set Group 8 Down Button to a Value
 			bool Hephalump = joystickGetDigital( 1,8,Joy_Down);
 
-			//Set all motors to -127
+			//Set all motors to 0
 			if (Hephalump == 1){
-				motorSet(2, -127);
-				motorSet(3, -127);
-				motorSet(9, -127);
-				motorSet(8, -127);
+				motorSet(2, 0);
+				motorSet(3, 0);
+				motorSet(9, 0);
+				motorSet(8, 0);
 
 				delay(20);
 			}
