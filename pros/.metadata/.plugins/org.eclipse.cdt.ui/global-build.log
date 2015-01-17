@@ -80,3 +80,209 @@ LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to
    text	   data	    bss	    dec	    hex	filename
   12280	      0	   3840	  16120	   3ef8	./bin/output.elf
 arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:20:55 **** Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12328	      0	   3840	  16168	   3f28	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:55:22 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:90:5: error: expected ';' before '}' token
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+11:55:32 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12348	      0	   3840	  16188	   3f3c	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:03:26 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12348	      0	   3840	  16188	   3f3c	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:07:59 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12340	      0	   3840	  16180	   3f34	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:09:09 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12340	      0	   3840	  16180	   3f34	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:11:06 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:96:5: error: expected ';' before '}' token
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+13:11:12 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12352	      0	   3840	  16192	   3f40	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:14:34 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12360	      0	   3840	  16200	   3f48	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:17:25 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12360	      0	   3840	  16200	   3f48	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:17:28 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+make[1]: Nothing to be done for `all'.
+13:18:38 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12360	      0	   3840	  16200	   3f48	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:20:30 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12360	      0	   3840	  16200	   3f48	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:26:19 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:74:0: warning: "JOY_UP" redefined [enabled by default]
+In file included from ../include/main.h:46:0,
+                 from opcontrol.c:35:
+../include/API.h:65:0: note: this is the location of the previous definition
+opcontrol.c:75:0: warning: "JOY_LEFT" redefined [enabled by default]
+In file included from ../include/main.h:46:0,
+                 from opcontrol.c:35:
+../include/API.h:61:0: note: this is the location of the previous definition
+opcontrol.c:76:0: warning: "JOY_RIGHT" redefined [enabled by default]
+In file included from ../include/main.h:46:0,
+                 from opcontrol.c:35:
+../include/API.h:69:0: note: this is the location of the previous definition
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12360	      0	   3840	  16200	   3f48	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:28:38 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:61:0: warning: "JOY_UP" redefined [enabled by default]
+In file included from ../include/main.h:46:0,
+                 from opcontrol.c:35:
+../include/API.h:65:0: note: this is the location of the previous definition
+opcontrol.c:62:0: warning: "JOY_LEFT" redefined [enabled by default]
+In file included from ../include/main.h:46:0,
+                 from opcontrol.c:35:
+../include/API.h:61:0: note: this is the location of the previous definition
+opcontrol.c:63:0: warning: "JOY_RIGHT" redefined [enabled by default]
+In file included from ../include/main.h:46:0,
+                 from opcontrol.c:35:
+../include/API.h:69:0: note: this is the location of the previous definition
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12360	      0	   3840	  16200	   3f48	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:29:19 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+make[1]: Nothing to be done for `all'.
+13:31:43 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:61:0: warning: "JOY_UP" redefined [enabled by default]
+In file included from ../include/main.h:46:0,
+                 from opcontrol.c:35:
+../include/API.h:65:0: note: this is the location of the previous definition
+opcontrol.c:62:0: warning: "JOY_LEFT" redefined [enabled by default]
+In file included from ../include/main.h:46:0,
+                 from opcontrol.c:35:
+../include/API.h:61:0: note: this is the location of the previous definition
+opcontrol.c:63:0: warning: "JOY_RIGHT" redefined [enabled by default]
+In file included from ../include/main.h:46:0,
+                 from opcontrol.c:35:
+../include/API.h:69:0: note: this is the location of the previous definition
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12360	      0	   3840	  16200	   3f48	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:32:24 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12360	      0	   3840	  16200	   3f48	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:34:07 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12372	      0	   3840	  16212	   3f54	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:35:14 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12372	      0	   3840	  16212	   3f54	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:44:45 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12384	      0	   3840	  16224	   3f60	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:53:00 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12360	      0	   3840	  16200	   3f48	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:54:06 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12384	      0	   3840	  16224	   3f60	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:56:42 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12352	      0	   3840	  16192	   3f40	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+13:58:10 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12368	      0	   3840	  16208	   3f50	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin

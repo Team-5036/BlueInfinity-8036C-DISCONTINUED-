@@ -83,13 +83,13 @@ void operatorControl() {
 					motorSet(4, 127);
 					motorSet(5, -127);
 				}
+				else if(Jefferson==0){
+					motorSet(4, 0);
+					motorSet(5, 0);
+				}
 				else if(Washington==1){
 					motorSet(4, -127);
 					motorSet(5, 127);
-				}
-				else{
-					motorSet(4, 0);
-					motorSet(5, 0);
 				}
 
 				if (Hephalump == 1){

@@ -83,15 +83,19 @@ void operatorControl() {
 					motorSet(4, 127);
 					motorSet(5, -127);
 				}
-				else if(Washington==1){
+				/*else if(Jefferson==0){
+					motorSet(4, 0);
+					motorSet(5, 0);
+				}*/
+				if(Washington==1){
 					motorSet(4, -127);
 					motorSet(5, 127);
 				}
-				else{
+				/*else if(Washington==0){
 					motorSet(4, 0);
 					motorSet(5, 0);
 				}
-
+*/
 				if (Hephalump == 1){
 					//Group 8 down button value
 					motorSet(9, 50);

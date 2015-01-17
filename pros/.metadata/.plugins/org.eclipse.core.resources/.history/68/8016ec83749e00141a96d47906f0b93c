@@ -53,6 +53,13 @@
  */
 
 //[@author aHammershapedfish]
+
+//Define the Joystick Buttons
+       //[Button]	[Char#]
+#define Joy_Down	1
+#define Joy_Up		2
+#define Joy_Left	3//Not Possible for use on Groups 5 or 6
+#define Joy_Right	4//^^^^^
 void operatorControl() {
 
 	while (1) {
@@ -68,28 +75,19 @@ void operatorControl() {
 		        // Joystick and motor values refreshed every 20 ms
 		        delay(20);
 		        //Set Group 8 Down Button to a Value
-		        //Define the Joystick Buttons
-		               //[Button]	[Char#]
-		        #define Joy_Down	1
-		        #define Joy_Up		2
-		        #define Joy_Left	3//Not Possible for use on Groups 5 or 6
-		        #define Joy_Right	4//^^^^^1
-			bool Hephalump = joystickGetDigital( 1,8, JOY_DOWN);
+			bool Hephalump = joystickGetDigital( 1,8,Joy_Down);
 			//Set Lift Buttons
-			bool Jefferson = joystickGetDigital(1,5, JOY_UP);
-			bool Washington = joystickGetDigital(1,6, JOY_UP);
+			bool Jefferson = joystickGetDigital(1,6, Joy_Up);
+			bool Washington = joystickGetDigital(1,5,Joy_Up);
 
 				if(Jefferson==1){
-					motorSet(4, 127);
-					motorSet(5, -127);
+					/*motorSet(4, 127);
+					motorSet(5, -127);*/
+					motorSet(9, 127);
 				}
-				else if(Washington==1){
+				if(Washington==1){
 					motorSet(4, -127);
 					motorSet(5, 127);
-				}
-				else{
-					motorSet(4, 0);
-					motorSet(5, 0);
 				}
 
 				if (Hephalump == 1){
