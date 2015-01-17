@@ -1,0 +1,27 @@
+!SESSION 2015-01-15 18:11:31.940 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.7.0_65
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Framework arguments:  --product org.eclipse.platform.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 --product org.eclipse.platform.ide
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2015-01-15 18:11:37.384
+!MESSAGE An error occurred while installing the items
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2015-01-15 18:11:37.384
+!MESSAGE session context was:(profile=PlatformProfile, phase=org.eclipse.equinox.internal.p2.engine.phases.Install, operand=null --> [R]NewCortexProject 1.0.0.0, action=org.eclipse.equinox.internal.p2.touchpoint.eclipse.actions.InstallBundleAction).
+!SUBENTRY 1 org.eclipse.equinox.p2.touchpoint.eclipse 4 0 2015-01-15 18:11:37.384
+!MESSAGE The artifact file for osgi.bundle,NewCortexProject,1.0.0.0 was not found.
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-01-15 18:17:41.277
+!MESSAGE Indexed 'Leviathon Code' (3 sources, 21 headers) in 0.44 sec: 830 declarations; 846 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+!SESSION 2015-01-16 18:01:10.253 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.7.0_65
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Framework arguments:  --product org.eclipse.platform.ide
+Command-line arguments:  -data C:\Users\WilliamFlint\pros -os win32 -ws win32 -arch x86_64 --product org.eclipse.platform.ide
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-01-16 18:01:11.465
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
