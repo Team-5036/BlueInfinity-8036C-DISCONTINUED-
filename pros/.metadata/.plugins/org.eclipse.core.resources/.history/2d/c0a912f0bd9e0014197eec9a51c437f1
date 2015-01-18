@@ -97,7 +97,7 @@ void operatorControl() {
 					motorSet(9, 50);
 				}*/
 
-			/*int Turin = analogRead(1);//Possible Bumper or other Analogue sensor Vars
+			int Turin = analogRead(1);
 			int Hurin = analogRead(2);
 
 			if (Turin >= 1){
@@ -105,7 +105,7 @@ void operatorControl() {
 			}
 			if (Hurin >= 1){
 				//What back bumper
-			}*/
+			}
 
 	}
 }

@@ -58,11 +58,11 @@ void operatorControl() {
 	while (1) {
 				/*[Beowulf-TankDrive System]
 				Read joystick values*/
-		        int LeftDrive = joystickGetAnalog(1, 3);
-		        int RightDrive = joystickGetAnalog(1, 2);
+		        int TentacleL = joystickGetAnalog(1, 3);
+		        int TentacleR = joystickGetAnalog(1, 2);
 		        // Send joystick outputs to motors
-		        motorSet(2, LeftDrive);
-		        motorSet(3, RightDrive);
+		        motorSet(2, TentacleL);
+		        motorSet(3, TentacleL);
 		        motorSet(9, -TentacleR);
 		        motorSet(8, -TentacleR);
 		        // Joystick and motor values refreshed every 20 ms
@@ -74,16 +74,16 @@ void operatorControl() {
 		        #define Joy_Up		2
 		        #define Joy_Left	3//Not Possible for use on Groups 5 or 6
 		        #define Joy_Right	4//^^^^^1
-			//bool Hephalump = joystickGetDigital( 1,8, JOY_DOWN);
+			bool Hephalump = joystickGetDigital( 1,8, JOY_DOWN);
 			//Set Lift Buttons
-			bool ElevatorD = joystickGetDigital(1,5, JOY_UP);
-			bool ElevatorU = joystickGetDigital(1,6, JOY_UP);
+			bool Jefferson = joystickGetDigital(1,5, JOY_UP);
+			bool Washington = joystickGetDigital(1,6, JOY_UP);
 
-				if(ElevatorD==1){
+				if(Jefferson==1){
 					motorSet(4, 127);
 					motorSet(5, -127);
 				}
-				else if(ElevatorU==1){
+				else if(Washington==1){
 					motorSet(4, -127);
 					motorSet(5, 127);
 				}
@@ -92,12 +92,12 @@ void operatorControl() {
 					motorSet(5, 0);
 				}
 
-				/*if (Hephalump == 1){
+				if (Hephalump == 1){
 					//Group 8 down button value
 					motorSet(9, 50);
-				}*/
+				}
 
-			/*int Turin = analogRead(1);//Possible Bumper or other Analogue sensor Vars
+			int Turin = analogRead(1);
 			int Hurin = analogRead(2);
 
 			if (Turin >= 1){
@@ -105,7 +105,7 @@ void operatorControl() {
 			}
 			if (Hurin >= 1){
 				//What back bumper
-			}*/
+			}
 
 	}
 }
