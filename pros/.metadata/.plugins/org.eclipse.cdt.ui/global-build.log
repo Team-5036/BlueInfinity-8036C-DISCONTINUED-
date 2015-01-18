@@ -286,3 +286,111 @@ LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to
    text	   data	    bss	    dec	    hex	filename
   12368	      0	   3840	  16208	   3f50	./bin/output.elf
 arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+22:14:22 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:69:36: error: 'Leftdrive' undeclared (first use in this function)
+opcontrol.c:69:36: note: each undeclared identifier is reported only once for each function it appears in
+opcontrol.c:69:47: error: 'Max' undeclared (first use in this function)
+opcontrol.c:69:35: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+opcontrol.c:69:50: error: expected ';' before ')' token
+opcontrol.c:69:50: error: expected expression before ')' token
+opcontrol.c:60:6: warning: unused variable 'MinSpeed' [-Wunused-variable]
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+22:16:30 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:69:11: warning: statement with no effect [-Wunused-value]
+opcontrol.c:60:6: warning: unused variable 'MinSpeed' [-Wunused-variable]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12304	      0	   3840	  16144	   3f10	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+22:18:06 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:72:23: error: 'LeftDrive' undeclared (first use in this function)
+opcontrol.c:72:23: note: each undeclared identifier is reported only once for each function it appears in
+opcontrol.c:60:6: warning: unused variable 'MinSpeed' [-Wunused-variable]
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+22:18:38 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:71:16: warning: unused variable 'LeftDrive' [-Wunused-variable]
+opcontrol.c:74:23: error: 'LeftDrive' undeclared (first use in this function)
+opcontrol.c:74:23: note: each undeclared identifier is reported only once for each function it appears in
+opcontrol.c:60:6: warning: unused variable 'MinSpeed' [-Wunused-variable]
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+22:19:06 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:71:16: warning: unused variable 'LeftDrive' [-Wunused-variable]
+opcontrol.c:74:23: error: 'LeftDrive' undeclared (first use in this function)
+opcontrol.c:74:23: note: each undeclared identifier is reported only once for each function it appears in
+opcontrol.c:60:6: warning: unused variable 'MinSpeed' [-Wunused-variable]
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+22:21:36 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:74:23: error: 'LeftDrive' undeclared (first use in this function)
+opcontrol.c:74:23: note: each undeclared identifier is reported only once for each function it appears in
+opcontrol.c:60:6: warning: unused variable 'MinSpeed' [-Wunused-variable]
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+22:46:16 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:60:6: warning: unused variable 'minSpeed' [-Wunused-variable]
+opcontrol.c:59:6: warning: unused variable 'maxSpeed' [-Wunused-variable]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12300	      0	   3840	  16140	   3f0c	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+23:36:25 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:77:2: error: implicit declaration of function 'While' [-Werror=implicit-function-declaration]
+opcontrol.c:78:5: warning: multi-line comment [-Wcomment]
+opcontrol.c:90:31: error: expected ')' before ';' token
+opcontrol.c:101:5: warning: multi-line comment [-Wcomment]
+cc1.exe: some warnings being treated as errors
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+23:38:31 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:102:5: warning: multi-line comment [-Wcomment]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  11568	      0	   3840	  15408	   3c30	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+23:38:53 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:103:5: warning: multi-line comment [-Wcomment]
+opcontrol.c:105:5: warning: multi-line comment [-Wcomment]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  11568	      0	   3840	  15408	   3c30	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+23:39:12 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  11568	      0	   3840	  15408	   3c30	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
