@@ -55,11 +55,6 @@
 //[@author aHammershapedfish]
 void operatorControl() {
 
-	//Setting Minimum and Maximum for Engine Values
-	int MaxSpeed = 127;
-	int MinSpeed = -127;
-
-
 	while (1) {
 				/*[Beowulf-TankDrive System]
 				Read joystick values*/
@@ -67,9 +62,9 @@ void operatorControl() {
 		        int RightDrive = joystickGetAnalog(1, 2);
 		        // Send joystick outputs to motors
 		        motorSet(2, LeftDrive);
-		        motorSet(3, LeftDrive);
-		        motorSet(9, -RightDrive);
-		        motorSet(8, -RightDrive);
+		        motorSet(3, RightDrive);
+		        motorSet(9, -TentacleR);
+		        motorSet(8, -TentacleR);
 		        // Joystick and motor values refreshed every 20 ms
 		        delay(20);
 		        //Set Group 8 Down Button to a Value
