@@ -54,7 +54,7 @@
  * This task should never exit; it should end with some kind of infinite loop, even if empty.
  */
 
-//[@author William Flint]
+//[@author aHammershapedfish]
 //Motor Ports
 int Forward_Left = 2;
 int Forward_Right = 3;
@@ -99,10 +99,9 @@ void operatorControl() {
 						}//end of else if statement
 
 					}//end of for statement
-
-				/*//_____________________________________________________________________\\
+				//_____________________________________________________________________\\
 				//Buttons\\
-				//button variables*/
+				//button variables
 					bool liftDown = joystickGetDigital(1,5, JOY_UP);
 					bool liftUp = joystickGetDigital(1, 6, Joy_Up);
 				//button if statements

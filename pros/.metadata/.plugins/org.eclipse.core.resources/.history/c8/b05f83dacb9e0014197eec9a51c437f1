@@ -54,7 +54,7 @@
  * This task should never exit; it should end with some kind of infinite loop, even if empty.
  */
 
-//[@author William Flint]
+//[@author aHammershapedfish]
 //Motor Ports
 int Forward_Left = 2;
 int Forward_Right = 3;
@@ -74,9 +74,9 @@ int Motor_Stop = 0;
 
 void operatorControl() {
 
-	while(1==1);{
-				/*//Beo-Wulf Drivetrain System\\
-					//get joystick values for right and left thumbsticks*/
+	While(1==1);{
+				//Beo-Wulf Drivetrain System\\
+					//get joystick values for right and left thumbsticks
 						int leftStick = joystickGetAnalog(1, 3);
 						int rightStick = joystickGetAnalog(1, 2);
 					//setting the motor values
@@ -87,8 +87,7 @@ void operatorControl() {
 					//motor values are refreshed every 20ms
 						delay(20);
 					//ensure motors dont go above or below the max or min
-					for(int p=0; p<=10;){
-						p=p+1;
+					for(int p=0; p<=10; p=p+1;){
 						if(motorGet(p)>Motor_Max){
 							motorSet(p,Motor_Max);
 							delay(20);
@@ -99,10 +98,9 @@ void operatorControl() {
 						}//end of else if statement
 
 					}//end of for statement
-
-				/*//_____________________________________________________________________\\
+				//_____________________________________________________________________\\
 				//Buttons\\
-				//button variables*/
+				//button variables
 					bool liftDown = joystickGetDigital(1,5, JOY_UP);
 					bool liftUp = joystickGetDigital(1, 6, Joy_Up);
 				//button if statements
