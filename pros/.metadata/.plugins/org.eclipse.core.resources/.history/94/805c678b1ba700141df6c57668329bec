@@ -56,7 +56,7 @@
 
 //[@author William Flint]
 //Timer Values
-int Time_Rotate = 10;//amount of time in ??value
+//int Time_Rotate = 1;//amount of time in ??value
 //Motor Ports
 int Forward_Left = 2;
 int Forward_Right = 3;
@@ -142,22 +142,16 @@ void operatorControl() {
 					}
 					//For Rotation
 					if(clawStraight==1){
-						/*for(int o=0; o<1;){
+						for(int o=0; o<1;){
 						int o=o+1;
-						motorSet(Claw_Rotate, Motor_Max);
-						}*/
-						motorSet(Claw_Rotate,Motor_Max);
-						delay(20);
-						motorSet(Claw_Rotate,Motor_Stop);
+						motorSet(Claw_Rotate, 20);
+						}
 					}
 					else if(clawRotated==1){
-						/*for(int z=0; z<1;){
+						for(int z=0; z<1;){
 							int z=z+1;
-							motorSet(Claw_Rotate, Motor_Min);
-						}*/
-						motorSet(Claw_Rotate,Motor_Min);
-						delay(20);
-						motorSet(Claw_Rotate,Motor_Stop);
+							motorSet(Claw_Rotate, -20);
+						}
 					}
 
 

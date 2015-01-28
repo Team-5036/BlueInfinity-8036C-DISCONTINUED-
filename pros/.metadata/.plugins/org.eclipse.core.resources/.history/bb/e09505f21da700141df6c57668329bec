@@ -151,13 +151,10 @@ void operatorControl() {
 						motorSet(Claw_Rotate,Motor_Stop);
 					}
 					else if(clawRotated==1){
-						/*for(int z=0; z<1;){
+						for(int z=0; z<1;){
 							int z=z+1;
 							motorSet(Claw_Rotate, Motor_Min);
-						}*/
-						motorSet(Claw_Rotate,Motor_Min);
-						delay(20);
-						motorSet(Claw_Rotate,Motor_Stop);
+						}
 					}
 
 

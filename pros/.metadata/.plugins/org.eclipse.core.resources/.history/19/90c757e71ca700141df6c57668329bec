@@ -142,22 +142,16 @@ void operatorControl() {
 					}
 					//For Rotation
 					if(clawStraight==1){
-						/*for(int o=0; o<1;){
+						for(int o=0; o<Time_Rotate;){
 						int o=o+1;
 						motorSet(Claw_Rotate, Motor_Max);
-						}*/
-						motorSet(Claw_Rotate,Motor_Max);
-						delay(20);
-						motorSet(Claw_Rotate,Motor_Stop);
+						}
 					}
 					else if(clawRotated==1){
-						/*for(int z=0; z<1;){
+						for(int z=0; z<Time_Rotate;){
 							int z=z+1;
 							motorSet(Claw_Rotate, Motor_Min);
-						}*/
-						motorSet(Claw_Rotate,Motor_Min);
-						delay(20);
-						motorSet(Claw_Rotate,Motor_Stop);
+						}
 					}
 
 
