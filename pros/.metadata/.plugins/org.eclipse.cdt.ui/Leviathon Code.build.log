@@ -1,10 +1,12 @@
-23:39:12 **** Incremental Build of configuration Default for project Leviathon Code ****
+12:51:59 **** Incremental Build of configuration Default for project Leviathon Code ****
 make all 
 CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:124:6: warning: multi-line comment [-Wcomment]
 LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
    text	   data	    bss	    dec	    hex	filename
-  11568	      0	   3840	  15408	   3c30	./bin/output.elf
+  12524	     40	   3848	  16412	   401c	./bin/output.elf
 arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
 
-23:39:12 Build Finished (took 426ms)
+12:51:59 Build Finished (took 530ms)
 

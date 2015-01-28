@@ -394,3 +394,151 @@ LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to
    text	   data	    bss	    dec	    hex	filename
   11568	      0	   3840	  15408	   3c30	./bin/output.elf
 arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:14:22 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  11568	      0	   3840	  15408	   3c30	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:30:46 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c:123:1: error: expected identifier or '(' before '}' token
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+11:31:22 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  11568	      0	   3840	  15408	   3c30	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:32:01 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+make[1]: Nothing to be done for `all'.
+11:36:21 **** Build of configuration Default for project test ****
+make all 
+CC -I../include -I../src auto.c
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12080	      0	   3840	  15920	   3e30	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:38:53 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:110:16: error: 'Lift_Left' undeclared (first use in this function)
+opcontrol.c:110:16: note: each undeclared identifier is reported only once for each function it appears in
+opcontrol.c:111:16: error: 'Lift_Right' undeclared (first use in this function)
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+11:39:54 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:107:11: warning: unused variable 'liftUp' [-Wunused-variable]
+opcontrol.c:106:11: warning: unused variable 'liftDown' [-Wunused-variable]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  11568	      0	   3840	  15408	   3c30	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:40:20 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:103:5: error: unterminated comment
+opcontrol.c:101:6: error: expected declaration or statement at end of input
+opcontrol.c:101:6: error: expected declaration or statement at end of input
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+11:40:41 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  11568	      0	   3840	  15408	   3c30	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:43:27 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  11568	      0	   3840	  15408	   3c30	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:43:35 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+make[1]: Nothing to be done for `all'.
+11:45:39 **** Incremental Build of configuration Default for project test ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12128	      0	   3840	  15968	   3e60	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:49:04 **** Incremental Build of configuration Default for project test ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12144	     16	   3840	  16000	   3e80	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:52:36 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12412	     32	   3848	  16292	   3fa4	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:53:55 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12412	     32	   3848	  16292	   3fa4	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+11:56:11 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+make[1]: Nothing to be done for `all'.
+11:59:15 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12412	     32	   3848	  16292	   3fa4	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+12:38:41 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:124:6: warning: multi-line comment [-Wcomment]
+opcontrol.c:130:11: warning: unused variable 'clawRotated' [-Wunused-variable]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12504	     40	   3848	  16392	   4008	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+12:47:14 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12524	     40	   3848	  16412	   401c	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+12:48:53 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12412	     40	   3848	  16300	   3fac	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+12:51:59 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:124:6: warning: multi-line comment [-Wcomment]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12524	     40	   3848	  16412	   401c	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
