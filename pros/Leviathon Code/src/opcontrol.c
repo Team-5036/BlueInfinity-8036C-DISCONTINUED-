@@ -56,7 +56,7 @@
 
 //[@author William Flint]
 //Timer Values
-int Time_Rotate = 10;//amount of time in ??value
+//int Time_Rotate = 10;//amount of time in ??value
 //Motor Ports
 int Forward_Left = 2;
 int Forward_Right = 3;

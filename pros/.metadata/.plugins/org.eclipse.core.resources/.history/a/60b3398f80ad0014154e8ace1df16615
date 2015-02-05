@@ -47,25 +47,6 @@
  *
  * The autonomous task may exit, unlike operatorControl() which should never exit. If it does
  * so, the robot will await a switch to another mode or disable/enable cycle.
-*/
+ */
 void autonomous() {
-	motorSet(2,-127);
-	motorSet(3,-127);
-	motorSet(8,127);
-	motorSet(9,127);
-		delay(2000);
-	motorSet(2,0);
-	motorSet(3,0);
-	motorSet(8,0);
-	motorSet(9,0);
-		delay(20);
-	motorSet(2,-127);
-	motorSet(3, -127);
-	motorSet(8,0);
-	motorSet(9,0);
-	delay(10000);
-
-
-
-
 }

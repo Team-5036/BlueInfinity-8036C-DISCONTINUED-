@@ -673,3 +673,63 @@ LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to
    text	   data	    bss	    dec	    hex	filename
   12536	     44	   3844	  16424	   4028	./bin/output.elf
 arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+16:47:20 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src auto.c
+auto.c: In function 'autonomous':
+auto.c:60:2: error: implicit declaration of function 'motorset' [-Werror=implicit-function-declaration]
+cc1.exe: some warnings being treated as errors
+make[1]: *** [../bin/auto.o] Error 1
+make: *** [src] Error 2
+16:48:41 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src auto.c
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+./bin/opcontrol.o:(.data+0x24): multiple definition of `Claw_Rotate'
+./bin/auto.o:(.data+0x10): first defined here
+./bin/opcontrol.o:(.data+0x20): multiple definition of `Claw_Hand'
+./bin/auto.o:(.data+0x14): first defined here
+./bin/opcontrol.o:(.data+0x1c): multiple definition of `Lift_Right'
+./bin/auto.o:(.data+0x18): first defined here
+./bin/opcontrol.o:(.data+0x18): multiple definition of `Lift_Left'
+./bin/auto.o:(.data+0x1c): first defined here
+./bin/opcontrol.o:(.data+0xc): multiple definition of `Behind_Right'
+./bin/auto.o:(.data+0xc): first defined here
+./bin/opcontrol.o:(.data+0x4): multiple definition of `Behind_Left'
+./bin/auto.o:(.data+0x4): first defined here
+./bin/opcontrol.o:(.data+0x8): multiple definition of `Forward_Right'
+./bin/auto.o:(.data+0x8): first defined here
+./bin/opcontrol.o:(.data+0x0): multiple definition of `Forward_Left'
+./bin/auto.o:(.data+0x0): first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [bin/output.elf] Error 1
+16:49:37 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:87:16: error: 'Forward_Left' undeclared (first use in this function)
+opcontrol.c:87:16: note: each undeclared identifier is reported only once for each function it appears in
+opcontrol.c:88:16: error: 'Behind_Left' undeclared (first use in this function)
+opcontrol.c:89:16: error: 'Forward_Right' undeclared (first use in this function)
+opcontrol.c:90:16: error: 'Behind_Right' undeclared (first use in this function)
+opcontrol.c:114:16: error: 'Lift_Left' undeclared (first use in this function)
+opcontrol.c:115:16: error: 'Lift_Right' undeclared (first use in this function)
+opcontrol.c:135:16: error: 'Claw_Hand' undeclared (first use in this function)
+opcontrol.c:149:16: error: 'Claw_Rotate' undeclared (first use in this function)
+make[1]: *** [../bin/opcontrol.o] Error 1
+make: *** [src] Error 2
+16:51:06 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+CC -I../include -I../src auto.c
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12664	     40	   3848	  16552	   40a8	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+16:54:42 **** Incremental Build of configuration Default for project Leviathon Code ****
+make all 
+make[1]: Nothing to be done for `all'.
+16:54:43 **** Build of configuration Default for project test ****
+make all 
+make[1]: Nothing to be done for `all'.

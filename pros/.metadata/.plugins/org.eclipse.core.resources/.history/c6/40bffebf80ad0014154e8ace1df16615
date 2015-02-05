@@ -47,22 +47,30 @@
  *
  * The autonomous task may exit, unlike operatorControl() which should never exit. If it does
  * so, the robot will await a switch to another mode or disable/enable cycle.
-*/
+ */
+int Forward_Left = 2;
+int Forward_Right = 3;
+int Behind_Left = 8;
+int Behind_Right = 9;
+int Lift_Left = 4;
+int Lift_Right = 5;
+int Claw_Hand = 6;
+int Claw_Rotate = 7;
 void autonomous() {
-	motorSet(2,-127);
-	motorSet(3,-127);
-	motorSet(8,127);
-	motorSet(9,127);
+	motorset(Forward_Left,-127);
+	motorset(Behind_Left,-127);
+	motorset(Forward_Right,127);
+	motorset(Behind_Right,127);
 		delay(2000);
-	motorSet(2,0);
-	motorSet(3,0);
-	motorSet(8,0);
-	motorSet(9,0);
+	motorset(Forward_Left,0);
+	motorset(Behind_Left,0);
+	motorset(Forward_Right,0);
+	motorset(Behind_Right,0);
 		delay(20);
-	motorSet(2,-127);
-	motorSet(3, -127);
-	motorSet(8,0);
-	motorSet(9,0);
+	motorset(Forward_Left,-127);
+	motorset(Behind_Left,-127);
+	motorset(Forward_Right,0);
+	motorset(Behind_Right,0);
 	delay(10000);
 
 

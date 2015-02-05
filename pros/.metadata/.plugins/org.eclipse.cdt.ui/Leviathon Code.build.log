@@ -1,10 +1,6 @@
-13:46:18 **** Incremental Build of configuration Default for project Leviathon Code ****
+16:54:42 **** Incremental Build of configuration Default for project Leviathon Code ****
 make all 
-CC -I../include -I../src opcontrol.c
-LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
-   text	   data	    bss	    dec	    hex	filename
-  12536	     44	   3844	  16424	   4028	./bin/output.elf
-arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+make[1]: Nothing to be done for `all'.
 
-13:46:18 Build Finished (took 479ms)
+16:54:43 Build Finished (took 239ms)
 

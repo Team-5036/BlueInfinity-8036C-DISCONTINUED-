@@ -55,6 +55,8 @@
  */
 
 //[@author William Flint]
+//Timer Values
+int Time_Rotate = 10;//amount of time in ??value
 //Motor Ports
 int Forward_Left = 2;
 int Forward_Right = 3;
@@ -62,8 +64,10 @@ int Behind_Left = 8;
 int Behind_Right = 9;
 int Lift_Left = 4;
 int Lift_Right = 5;
+int Claw_Hand = 6;
+int Claw_Rotate = 7;
 //Define Joystick Buttons
-#define Joy_Down	1
+#define Joy_Down	1//this works somehow?
 #define Joy_Up		2
 #define Joy_Left	3
 #define Joy_Right	4
@@ -74,10 +78,10 @@ int Motor_Stop = 0;
 
 void operatorControl() {
 
-	while(1==1);{
+	while(1){
 				/*//Beo-Wulf Drivetrain System\\
 					//get joystick values for right and left thumbsticks*/
-						int leftStick = joystickGetAnalog(1, 3);
+						int leftStick = -joystickGetAnalog(1, 3);
 						int rightStick = joystickGetAnalog(1, 2);
 					//setting the motor values
 						motorSet(Forward_Left, leftStick);
@@ -104,20 +108,58 @@ void operatorControl() {
 				//Buttons\\
 				//button variables*/
 					bool liftDown = joystickGetDigital(1,5, JOY_UP);
-					bool liftUp = joystickGetDigital(1, 6, Joy_Up);
+					bool liftUp = joystickGetDigital(1, 6, JOY_UP);
 				//button if statements
 					if(liftDown==1){
-						motorSet(Lift_Left, Motor_Max);
-						motorSet(Lift_Right, Motor_Min);
-					}//end of if Statement
-					else if(liftUp==1){
 						motorSet(Lift_Left, Motor_Min);
 						motorSet(Lift_Right, Motor_Max);
+					}//end of if Statement
+					else if(liftUp==1){
+						motorSet(Lift_Left, Motor_Max);
+						motorSet(Lift_Right, Motor_Min);
 					} //end of else/if Statement
 					//ensure that the lifts stop moving when buttons not pressed
 					else{
 						motorSet(Lift_Left, Motor_Stop);
 						motorSet(Lift_Right, Motor_Stop);
 					}//end of else statement
+					/*//__________________________________________________________________________\\
+					//Claw Stuff//
+					//claw variables*/
+					bool clawOpen = joystickGetDigital(1, 8, JOY_LEFT);
+					bool clawClose = joystickGetDigital(1,8, JOY_RIGHT);
+					bool clawStraight = joystickGetDigital(1,6,JOY_DOWN);
+					bool clawRotated = joystickGetDigital(1,5,JOY_DOWN);
+					//claw if statements
+					if(clawOpen==1){
+						motorSet(Claw_Hand, Motor_Max);
+					}
+					else if(clawClose==1){
+						motorSet(Claw_Hand, Motor_Min);
+					}
+					else{
+						motorSet(Claw_Hand, Motor_Stop);
+					}
+					//For Rotation
+					if(clawStraight==1){
+						/*for(int o=0; o<1;){
+						int o=o+1;
+						motorSet(Claw_Rotate, Motor_Max);
+						}*/
+						motorSet(Claw_Rotate,Motor_Max);
+						delay(20);
+						motorSet(Claw_Rotate,Motor_Stop);
+					}
+					else if(clawRotated==1){
+						/*for(int z=0; z<1;){
+							int z=z+1;
+							motorSet(Claw_Rotate, Motor_Min);
+						}*/
+						motorSet(Claw_Rotate,Motor_Min);
+						delay(20);
+						motorSet(Claw_Rotate,Motor_Stop);
+					}
+
+
 	}//End of While Statement
 }//void statement ending

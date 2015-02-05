@@ -1,10 +1,6 @@
-11:49:04 **** Incremental Build of configuration Default for project test ****
+16:54:43 **** Build of configuration Default for project test ****
 make all 
-CC -I../include -I../src opcontrol.c
-LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
-   text	   data	    bss	    dec	    hex	filename
-  12144	     16	   3840	  16000	   3e80	./bin/output.elf
-arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+make[1]: Nothing to be done for `all'.
 
-11:49:05 Build Finished (took 633ms)
+16:54:43 Build Finished (took 487ms)
 
